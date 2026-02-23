@@ -1,5 +1,17 @@
-Hash table adalah struktur data yang digunakan untuk menyimpan data agar proses pencarian dapat dilakukan dengan cepat dan efisien. Cara kerjanya dapat dianalogikan seperti sebuah tempat parkir yang memiliki banyak slot bernomor. Setiap mobil yang datang tidak memilih tempat secara sembarangan, melainkan diarahkan ke slot tertentu menggunakan sebuah rumus. Dalam kode tersebut, rumus yang digunakan adalah hash(key) % size, yaitu nilai dari data dihitung menggunakan fungsi hash, lalu hasilnya disesuaikan dengan jumlah slot yang tersedia agar berada dalam rentang indeks tabel.
+Hash table adalah struktur data yang digunakan untuk menyimpan data agar proses pencarian dapat 
+dilakukan dengan cepat dan efisien. Cara kerjanya dapat dianalogikan seperti sebuah tempat parkir yang memiliki banyak slot bernomor. 
+Setiap mobil yang datang tidak memilih tempat secara sembarangan, melainkan diarahkan ke slot tertentu menggunakan sebuah rumus. D
+alam kode tersebut, rumus yang digunakan adalah hash(key) % size, yaitu nilai dari data dihitung menggunakan fungsi hash,
+lalu hasilnya disesuaikan dengan jumlah slot yang tersedia agar berada dalam rentang indeks tabel.
 
-Namun, dalam praktiknya bisa terjadi situasi di mana dua data menghasilkan nomor slot yang sama. Kejadian ini disebut collision atau tabrakan. Ibarat dua mobil yang diarahkan ke slot parkir yang sama, padahal hanya ada satu tempat yang tersedia. Untuk mengatasi masalah ini, digunakan metode yang disebut linear probing. Metode ini bekerja dengan cara memeriksa slot berikutnya secara berurutan hingga menemukan slot yang kosong. Jika slot awal sudah terisi, sistem akan berpindah ke slot selanjutnya, dan terus berlanjut sampai tersedia tempat untuk menyimpan data tersebut.
+Namun, dalam praktiknya bisa terjadi situasi di mana dua data menghasilkan nomor slot yang sama.
+Kejadian ini disebut collision atau tabrakan. Ibarat dua mobil yang diarahkan ke slot parkir yang sama,
+padahal hanya ada satu tempat yang tersedia. Untuk mengatasi masalah ini, digunakan metode yang disebut linear probing. 
+Metode ini bekerja dengan cara memeriksa slot berikutnya secara berurutan hingga menemukan slot yang kosong. Jika slot awal sudah terisi,
+sistem akan berpindah ke slot selanjutnya, dan terus berlanjut sampai tersedia tempat untuk menyimpan data tersebut.
 
-Selain proses penyimpanan, program juga menghitung load factor, yaitu tingkat kepenuhan tabel. Load factor diperoleh dari perbandingan antara jumlah data yang sudah tersimpan dengan total kapasitas tabel. Semakin tinggi nilai load factor, semakin penuh tabel tersebut, dan kemungkinan terjadinya collision juga semakin besar. Secara keseluruhan, kode tersebut merupakan simulasi cara kerja hash table dengan metode linear probing, mulai dari penentuan posisi awal menggunakan fungsi hash, penanganan collision, hingga pemantauan tingkat kepenuhan tabel.
+Selain proses penyimpanan, program juga menghitung load factor, yaitu tingkat kepenuhan tabel. 
+Load factor diperoleh dari perbandingan antara jumlah data yang sudah tersimpan dengan total kapasitas tabel. 
+Semakin tinggi nilai load factor, semakin penuh tabel tersebut, dan kemungkinan terjadinya collision juga semakin besar.
+Secara keseluruhan, kode tersebut merupakan simulasi cara kerja hash table dengan metode linear probing, mulai dari penentuan posisi awal menggunakan fungsi hash, 
+penanganan collision, hingga pemantauan tingkat kepenuhan tabel.
